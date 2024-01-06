@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import aerialImage from "~/assets/2.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Image
+  class="h-full w-full object-cover"
+  src={aerialImage}
+  widths={widths}
+  sizes={sizes}
+  alt="Aerial image of the project limits"
+/>

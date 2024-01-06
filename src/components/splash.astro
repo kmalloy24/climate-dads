@@ -1,0 +1,28 @@
+---
+import HeroImage from "~/components/hero-image.astro";
+import { Image } from "astro:assets";
+import logoImage from "~/assets/logo.png";
+---
+
+<section class="relative h-full">
+  <div id="splash" class="absolute inset-0 opacity-50">
+    <HeroImage />
+  </div>
+  <div class="relative grid h-full place-items-center">
+    <h2 class="flex flex-col gap-2">
+      <Image
+        class="mx-auto w-24 items-center justify-center"
+        src={logoImage}
+        alt="Aerial image of the project limits"
+      />
+      <div
+        class="gradient-text text-center font-extrabold tracking-tighter text-7xl"
+      >
+        Climate Dads
+      </div>
+      <div class="text-center tracking-tighter text-orange-300 text-4xl">
+        Dadvocacy for the Planet
+      </div>
+    </h2>
+  </div>
+</section>

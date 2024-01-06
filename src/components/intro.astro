@@ -1,0 +1,52 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import { Image } from "astro:assets";
+import newImage from "~/assets/new.jpg";
+import oldImage from "~/assets/old.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<ContentSection title="Take Action" id="intro">
+  <Fragment slot="lead">
+    Become a <span class="text-primary">climate dad</span> today!
+  </Fragment>
+  <p class="w-[80%] text-center">
+    We are still working on our home on the web, but to start you can join our
+    email list to stay up to date with the latest climate dad news.
+  </p>
+  <form class="flex gap-x-2">
+    <input
+      type="email"
+      placeholder="youremail@you.com"
+      class="max-w-sx input input-bordered w-full"
+    />
+    <button class="btn btn-outline">Submit</button>
+  </form>
+  <p class="font-bold text-primary text-2xl">
+    There are climate dads all over!
+  </p>
+
+  <div class="stats stats-vertical w-9/12 lg:stats-horizontal">
+    <div class="stat place-items-center">
+      <div class="stat-value text-primary">1,000</div>
+      <div class="stat-footer">Members</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-value text-primary">50</div>
+      <div class="stat-footer">States</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-value text-primary">6</div>
+      <div class="stat-footer">Countries</div>
+    </div>
+
+    <div class="stat place-items-center">
+      <div class="stat-value text-primary">25</div>
+      <div class="stat-footer">Local Groups</div>
+    </div>
+  </div>
+</ContentSection>
