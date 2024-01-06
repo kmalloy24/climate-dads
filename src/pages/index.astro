@@ -12,7 +12,6 @@ import Events from "~/components/events.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
-const image = new URL("social.jpg", site);
 const description = "Dadvocacy for the Planet";
 ---
 
@@ -31,7 +30,10 @@ const description = "Dadvocacy for the Planet";
     <meta property="og:title" content="Climate Dads" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta
+      property="og:image"
+      content="https://climate-dads.vercel.app/cd.jpg"
+    />
     <meta property="og:url" content={site} />
     <meta name="twitter:card" content="summary_large_image" />
 
